@@ -1,0 +1,28 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-legacy": "^1.7.1",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "vite-plugin-windicss": "^1.8.3",
+    "vue": "^3.2.25",
+    "windicss": "^3.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vue-tsc": "^0.29.8"
+  },
+  "optionalDependencies": {
+    "esbuild": "^0.14.27"
+  },
+  "main": "index.js",
+  "author": "leowang <leowang@jetfuel.com.tw>",
+  "license": "MIT"
+}
