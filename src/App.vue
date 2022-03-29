@@ -1,23 +1,191 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div class="bg-red-800">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Hello Vue 3 + TypeScript + Vite"  />
+  <div class="min-h-full grid grid-cols-1 gap-5">
+    <div class="p-10 bg-base">
+      <h2 class="mb-6 text-3xl font-semibold text-left text-primary">最近文章</h2>
+      <ul class="space-y-10">
+        <li>
+          <a>
+            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
+              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
+                <div class="flex flex-row justify-between">
+                  <span>userName</span>
+                  <span class="space-x-1">
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">react</span>
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">hooks</span>
+                  </span>
+                </div>
+                <div class="flex flex-row justify-between">
+                  <h3 class="text-xl font-bold">useEffect 完整指南</h3>
+                  <span class="text-muted">2020-06-08</span>
+                </div>
+                <p class="max-w-3xl leading-8 text-muted">你用Hooks写了一些组件，甚或写了一个小型应用。你可能很满意，使用它的API很舒服并且在这个过程中获得了一些小技巧。</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a>
+            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
+              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
+                <div class="flex flex-row justify-between">
+                  <span>userName</span>
+                  <span class="space-x-1">
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">css</span>
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">tailwind</span>
+                  </span>
+                </div>
+                <div class="flex flex-row justify-between">
+                  <h3 class="text-xl font-bold">使用 CSS variables 和Tailwind css实现主题换肤</h3>
+                  <span class="text-muted">2020-06-08</span>
+                </div>
+                <p class="max-w-3xl leading-8 text-muted">根据Tailwind Labs的[换肤视频]，手动实践。</p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-10 bg-base">
+      <h2 class="mb-6 text-3xl font-semibold text-left text-primary">最近文章</h2>
+      <ul class="space-y-10">
+        <li>
+          <a>
+            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
+              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
+                <div class="flex flex-row justify-between">
+                  <span>userName</span>
+                  <span class="space-x-1">
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">react</span>
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">hooks</span>
+                  </span>
+                </div>
+                <div class="flex flex-row justify-between">
+                  <h3 class="text-xl font-bold">useEffect 完整指南</h3>
+                  <span class="text-muted">2020-06-08</span>
+                </div>
+                <p class="max-w-3xl leading-8 text-muted">你用Hooks写了一些组件，甚或写了一个小型应用。你可能很满意，使用它的API很舒服并且在这个过程中获得了一些小技巧。</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a>
+            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
+              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
+                <div class="flex flex-row justify-between">
+                  <span>userName</span>
+                  <span class="space-x-1">
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">css</span>
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">tailwind</span>
+                  </span>
+                </div>
+                <div class="flex flex-row justify-between">
+                  <h3 class="text-xl font-bold">使用 CSS variables 和Tailwind css实现主题换肤</h3>
+                  <span class="text-muted">2020-06-08</span>
+                </div>
+                <p class="max-w-3xl leading-8 text-muted">根据Tailwind Labs的[换肤视频]，手动实践。</p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-10 bg-base">
+      <h2 class="mb-6 text-3xl font-semibold text-left text-primary">最近文章</h2>
+      <ul class="space-y-10">
+        <li>
+          <a>
+            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
+              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
+                <div class="flex flex-row justify-between">
+                  <span>userName</span>
+                  <span class="space-x-1">
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">react</span>
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">hooks</span>
+                  </span>
+                </div>
+                <div class="flex flex-row justify-between">
+                  <h3 class="text-xl font-bold">useEffect 完整指南</h3>
+                  <span class="text-muted">2020-06-08</span>
+                </div>
+                <p class="max-w-3xl leading-8 text-muted">你用Hooks写了一些组件，甚或写了一个小型应用。你可能很满意，使用它的API很舒服并且在这个过程中获得了一些小技巧。</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a>
+            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
+              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
+                <div class="flex flex-row justify-between">
+                  <span>userName</span>
+                  <span class="space-x-1">
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">css</span>
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">tailwind</span>
+                  </span>
+                </div>
+                <div class="flex flex-row justify-between">
+                  <h3 class="text-xl font-bold">使用 CSS variables 和Tailwind css实现主题换肤</h3>
+                  <span class="text-muted">2020-06-08</span>
+                </div>
+                <p class="max-w-3xl leading-8 text-muted">根据Tailwind Labs的[换肤视频]，手动实践。</p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-10 bg-base">
+      <h2 class="mb-6 text-3xl font-semibold text-left text-primary">最近文章</h2>
+
+      <ul class="space-y-10">
+        <li>
+          <a>
+            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
+              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
+                <div class="flex flex-row justify-between">
+                  <span>userName</span>
+                  <span class="space-x-1">
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">react</span>
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">hooks</span>
+                  </span>
+                </div>
+                <div class="flex flex-row justify-between">
+                  <h3 class="text-xl font-bold">useEffect 完整指南</h3>
+                  <span class="text-muted">2020-06-08</span>
+                </div>
+                <p class="max-w-3xl leading-8 text-muted">你用Hooks写了一些组件，甚或写了一个小型应用。你可能很满意，使用它的API很舒服并且在这个过程中获得了一些小技巧。</p>
+              </div>
+            </article>
+          </a>
+        </li>
+        <li>
+          <a>
+            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
+              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
+                <div class="flex flex-row justify-between">
+                  <span>userName</span>
+                  <span class="space-x-1">
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">css</span>
+                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">tailwind</span>
+                  </span>
+                </div>
+                <div class="flex flex-row justify-between">
+                  <h3 class="text-xl font-bold">使用 CSS variables 和Tailwind css实现主题换肤</h3>
+                  <span class="text-muted">2020-06-08</span>
+                </div>
+                <p class="max-w-3xl leading-8 text-muted">根据Tailwind Labs的[换肤视频]，手动实践。</p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
