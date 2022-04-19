@@ -23,7 +23,7 @@
       description="描述信息"
     />
     <router-view/>
-    <div class="text-teal-400 m-4">123</div>
+    <div class="text-teal-400 m-4">12344</div>
   </van-config-provider>
 </template>
 
