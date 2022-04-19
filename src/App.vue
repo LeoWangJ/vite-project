@@ -15,7 +15,7 @@
 
 <template>
   <van-config-provider :theme-vars="appVars">
-    <Button type="primary" @click="showShare = !showShare">主要按钮</Button>
+    <Button type="primary" class="m-4 relative tt" @click="showShare = !showShare">主要按钮</Button>
     <ShareSheet
       v-model:show="showShare"
       :options="options"
@@ -23,9 +23,13 @@
       description="描述信息"
     />
     <router-view/>
-    <div class="text-teal-400">123</div>
+    <div class="text-teal-400 m-4">123</div>
   </van-config-provider>
 </template>
 
-<style>
+<style lang="postcss" scoped>
+.tt :deep(.van-button__text) {
+  @apply font-extrabold mt-4;
+
+}
 </style>
