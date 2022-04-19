@@ -1,190 +1,30 @@
 <script setup lang="ts">
+  import { ref } from 'vue';
+  import { Button } from 'vant';
+  import { ShareSheet } from 'vant';
+  import { appVars } from './theme'
+  const showShare = ref(false);
+  const options = [
+    { name: '微信', icon: 'wechat' },
+    { name: '微博', icon: 'weibo' },
+    { name: '复制链接', icon: 'link', description: '描述信息' },
+    { name: '分享海报', icon: 'poster' },
+    { name: '二维码', icon: 'qrcode' },
+  ];
 </script>
 
 <template>
-  <div class="min-h-full grid grid-cols-1 gap-5">
-    <div class="p-10 bg-base">
-      <h2 class="mb-6 text-3xl font-semibold text-left text-primary">最近文章</h2>
-      <ul class="space-y-10">
-        <li>
-          <a>
-            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
-              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
-                <div class="flex flex-row justify-between">
-                  <span>userName</span>
-                  <span class="space-x-1">
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">react</span>
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">hooks</span>
-                  </span>
-                </div>
-                <div class="flex flex-row justify-between">
-                  <h3 class="text-xl font-bold">useEffect 完整指南</h3>
-                  <span class="text-muted">2020-06-08</span>
-                </div>
-                <p class="max-w-3xl leading-8 text-muted">你用Hooks写了一些组件，甚或写了一个小型应用。你可能很满意，使用它的API很舒服并且在这个过程中获得了一些小技巧。</p>
-              </div>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a>
-            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
-              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
-                <div class="flex flex-row justify-between">
-                  <span>userName</span>
-                  <span class="space-x-1">
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">css</span>
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">tailwind</span>
-                  </span>
-                </div>
-                <div class="flex flex-row justify-between">
-                  <h3 class="text-xl font-bold">使用 CSS variables 和Tailwind css实现主题换肤</h3>
-                  <span class="text-muted">2020-06-08</span>
-                </div>
-                <p class="max-w-3xl leading-8 text-muted">根据Tailwind Labs的[换肤视频]，手动实践。</p>
-              </div>
-            </article>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="p-10 bg-base">
-      <h2 class="mb-6 text-3xl font-semibold text-left text-primary">最近文章</h2>
-      <ul class="space-y-10">
-        <li>
-          <a>
-            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
-              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
-                <div class="flex flex-row justify-between">
-                  <span>userName</span>
-                  <span class="space-x-1">
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">react</span>
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">hooks</span>
-                  </span>
-                </div>
-                <div class="flex flex-row justify-between">
-                  <h3 class="text-xl font-bold">useEffect 完整指南</h3>
-                  <span class="text-muted">2020-06-08</span>
-                </div>
-                <p class="max-w-3xl leading-8 text-muted">你用Hooks写了一些组件，甚或写了一个小型应用。你可能很满意，使用它的API很舒服并且在这个过程中获得了一些小技巧。</p>
-              </div>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a>
-            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
-              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
-                <div class="flex flex-row justify-between">
-                  <span>userName</span>
-                  <span class="space-x-1">
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">css</span>
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">tailwind</span>
-                  </span>
-                </div>
-                <div class="flex flex-row justify-between">
-                  <h3 class="text-xl font-bold">使用 CSS variables 和Tailwind css实现主题换肤</h3>
-                  <span class="text-muted">2020-06-08</span>
-                </div>
-                <p class="max-w-3xl leading-8 text-muted">根据Tailwind Labs的[换肤视频]，手动实践。</p>
-              </div>
-            </article>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="p-10 bg-base">
-      <h2 class="mb-6 text-3xl font-semibold text-left text-primary">最近文章</h2>
-      <ul class="space-y-10">
-        <li>
-          <a>
-            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
-              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
-                <div class="flex flex-row justify-between">
-                  <span>userName</span>
-                  <span class="space-x-1">
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">react</span>
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">hooks</span>
-                  </span>
-                </div>
-                <div class="flex flex-row justify-between">
-                  <h3 class="text-xl font-bold">useEffect 完整指南</h3>
-                  <span class="text-muted">2020-06-08</span>
-                </div>
-                <p class="max-w-3xl leading-8 text-muted">你用Hooks写了一些组件，甚或写了一个小型应用。你可能很满意，使用它的API很舒服并且在这个过程中获得了一些小技巧。</p>
-              </div>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a>
-            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
-              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
-                <div class="flex flex-row justify-between">
-                  <span>userName</span>
-                  <span class="space-x-1">
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">css</span>
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">tailwind</span>
-                  </span>
-                </div>
-                <div class="flex flex-row justify-between">
-                  <h3 class="text-xl font-bold">使用 CSS variables 和Tailwind css实现主题换肤</h3>
-                  <span class="text-muted">2020-06-08</span>
-                </div>
-                <p class="max-w-3xl leading-8 text-muted">根据Tailwind Labs的[换肤视频]，手动实践。</p>
-              </div>
-            </article>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="p-10 bg-base">
-      <h2 class="mb-6 text-3xl font-semibold text-left text-primary">最近文章</h2>
-
-      <ul class="space-y-10">
-        <li>
-          <a>
-            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
-              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
-                <div class="flex flex-row justify-between">
-                  <span>userName</span>
-                  <span class="space-x-1">
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">react</span>
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">hooks</span>
-                  </span>
-                </div>
-                <div class="flex flex-row justify-between">
-                  <h3 class="text-xl font-bold">useEffect 完整指南</h3>
-                  <span class="text-muted">2020-06-08</span>
-                </div>
-                <p class="max-w-3xl leading-8 text-muted">你用Hooks写了一些组件，甚或写了一个小型应用。你可能很满意，使用它的API很舒服并且在这个过程中获得了一些小技巧。</p>
-              </div>
-            </article>
-          </a>
-        </li>
-        <li>
-          <a>
-            <article class="relative flex items-center transition-transform transform group hover:-translate-x-2">
-              <div class="flex flex-col flex-grow py-8 space-y-4 text-base rounded px-8 shadow-md bg-off-base">
-                <div class="flex flex-row justify-between">
-                  <span>userName</span>
-                  <span class="space-x-1">
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">css</span>
-                    <span class="bg-base px-2 py-1 rounded hover:bg-secondary hover:text-primary cursor-pointer">tailwind</span>
-                  </span>
-                </div>
-                <div class="flex flex-row justify-between">
-                  <h3 class="text-xl font-bold">使用 CSS variables 和Tailwind css实现主题换肤</h3>
-                  <span class="text-muted">2020-06-08</span>
-                </div>
-                <p class="max-w-3xl leading-8 text-muted">根据Tailwind Labs的[换肤视频]，手动实践。</p>
-              </div>
-            </article>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <van-config-provider :theme-vars="appVars">
+    <Button type="primary" @click="showShare = !showShare">主要按钮</Button>
+    <ShareSheet
+      v-model:show="showShare"
+      :options="options"
+      title="立即分享给好友"
+      description="描述信息"
+    />
+    <router-view/>
+    <div class="text-teal-400">123</div>
+  </van-config-provider>
 </template>
 
 <style>
